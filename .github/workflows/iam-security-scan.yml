@@ -1,0 +1,25 @@
+name: Cloud IAM Security Scan
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  iam-analysis:
+    name: Analyze IAM Policies
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Run IAM policy analyzer
+        run: |
+          node analyzer.js policies/admin-policy.json
+          node analyzer.js policies/developer-policy.json
+          node analyzer.js policies/risky-policy.json
