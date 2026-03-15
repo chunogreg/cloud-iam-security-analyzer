@@ -1,5 +1,9 @@
 const fs = require("fs");
 
+let critical = 0;
+let high = 0;
+let medium = 0;
+
 const file = process.argv[2];
 
 if (!file) {
@@ -21,13 +25,20 @@ policy.Statement.forEach((statement) => {
   actions.forEach((action) => {
     if (rules.critical.includes(action)) {
       console.log("CRITICAL: Administrator level access detected ->", action);
+      critical++;
     }
     if (rules.high.includes(action)) {
       console.log("HIGH: Privilege escalation risk ->", action);
+      high++;
     }
 
     if (rules.medium.includes(action)) {
       console.log("MEDIUM: overly permisive service access ->", action);
+      medium++;
+    }
+    if (action.endsWith(":*")) {
+      console.log("MEDIUM: Wildcard permission detected ->", action);
+      medium++;
     }
   });
 
@@ -35,3 +46,9 @@ policy.Statement.forEach((statement) => {
   //   console.log("CRITICAL Administrator access detected");
   // }
 });
+console.log("");
+console.log("Security Fidings Summary");
+console.log("---------------------------");
+console.log("CRITICAL", critical);
+console.log("HIGH", high);
+console.log("MEDIUM", medium);
