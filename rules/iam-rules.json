@@ -1,0 +1,5 @@
+{
+  "critical": ["*"],
+  "high": ["iam:CreateUser", "iam:AttachUserPolicy", "iam:CreateAccessKey"],
+  "medium": ["s3:*", "es2:*"]
+}
