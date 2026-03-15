@@ -1,4 +1,5 @@
 const fs = require("fs");
+require("dotenv").config();
 
 let critical = 0;
 let high = 0;
