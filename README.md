@@ -90,7 +90,7 @@ cloud-iam-security-analyzer
 
 Clone the repository: ---
 
-git clone https://github.com/chunogreg/cloud-iam-security-analyzer.git
+      git clone https://github.com/chunogreg/cloud-iam-security-analyzer.git
 
 Navigate into the project directory:
 
@@ -106,7 +106,7 @@ Install dependencies
 
 Run the analyzer against a policy file:
 
-node analyzer.js policies/risky-policy.json
+      node analyzer.js policies/risky-policy.json
 
 The tool will scan the policy and generate a security report.
 
