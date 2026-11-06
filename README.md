@@ -2,9 +2,9 @@
 
 ## Overview
 
-Cloud IAM Security Analyzer is a lightweight security tool that analyzes Identity Access Management (IAM) policies to detect dangerous permissions and potential previledge escalation risks.
+Cloud IAM Security Analyzer is a lightweight security tool that analyzes Identity Access Management (IAM) policies to detect dangerous permissions and potential previlege escalation risks.
 
-The tool scan IAM policy files and reports security fidings based on predefined security rules. It helps security engineers identify overly permissive policies that violate the principle of least privilege.
+The tool scan IAM policy files and reports security findings based on predefined security rules. It helps security engineers identify overly permissive policies that violate the principle of least privilege.
 
 The project simulates how cloud security teams analyze policies used in cloud environments such as Amazon Web Services
 
@@ -22,7 +22,7 @@ Detects policies that grant full administrative privileges.
 
 "Action": "\*"
 
-### Priviledge Escalation
+### Privilege Escalation
 
 Detects dangerous actions that attackers can use to gain higher privileges.
 
@@ -58,7 +58,7 @@ HIGH: Privilege escalation risk -> iam:CreateAccessKey
 
 ---
 
-Security Fidings Summary  
+Security Findings Summary  
 \----------------------------  
 CRITICAL: 0  
 HIGH: 1  
@@ -66,7 +66,7 @@ MEDIUM: 2
 
 ---
 
-## Project Struction
+## Project Structure
 
 ```
 cloud-iam-security-analyzer
