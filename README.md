@@ -106,8 +106,7 @@ Install dependencies
 
 Run the analyzer against a policy file:
 
-      npm run dev
-
+      node analyzer.js policies/risky-policy.json
 
 The tool will scan the policy and generate a security report.
 
