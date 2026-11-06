@@ -2,7 +2,7 @@
 
 ## Overview
 
-Cloud IAM Security Analyzer is a lightweight security tool that analyzes Identity Access Management (IAM) policies to detect dangerous permissions and potential previlege escalation risks.
+Cloud IAM Security Analyzer is a lightweight security tool that analyzes Identity Access Management (IAM) policies to detect dangerous permissions and potential privilege escalation risks.
 
 The tool scan IAM policy files and reports security findings based on predefined security rules. It helps security engineers identify overly permissive policies that violate the principle of least privilege.
 
