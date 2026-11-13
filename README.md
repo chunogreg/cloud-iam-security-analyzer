@@ -144,3 +144,7 @@ JSON policy analysis
 DevSecOps Security Portfolio Project
 
 ---
+
+The link to the deployed version of **pokedex:** https://part11-4atj.onrender.com
+
+The app repository for my own pipeline: https://github.com/chunogreg/cloud-iam-security-analyzer
