@@ -108,7 +108,7 @@ Run the analyzer against a policy file:
 
       node analyzer.js policies/risky-policy.json
 
-The tool will scan the policy and generate a security report.
+The tool will scan the policy and generate a security report
 
 ---
 
